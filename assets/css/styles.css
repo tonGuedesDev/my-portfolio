@@ -1,0 +1,206 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+  
+@media screen and (min-width: 768px){
+  :root{
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*===== BASE =====*/
+
+/*===== CLASS CSS =====*/
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);  
+}
+/*===== LAYOUT =====*/
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.bd-grid {
+  display: grid;
+  grid-gap: 1.5rem
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: #000;
+}
+
+/*===== NAV =====*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .nav__menu {
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #000;
+    transition: 1000ms;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-3);
+}
+
+.nav__link {
+  color: var(--first-color-lighten);
+  transition: 300ms;
+}
+
+.nav__link:hover {
+  color: var(--first-color-light);
+}
+
+.nav__logo, .nav__toggle {
+  color: var(--first-color-lighten);
+}
+
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+
+/* Show menu */
+.show-menu {
+  top: calc(var(--header-height) + 1px);
+  transition: 800ms;
+}
+
+/* Active menu */
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -.7rem;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: var(--first-color-light);
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: var(--first-color-lighten);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link {
+  color: var(--first-color-dark);
+}
+
+.scroll-header .nav__menu {
+  background-color: var(--first-color-lighten);
+}
+
+/*===== SCROLL TOP =====*/
+.scrollTop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .9rem;
+  background-color: rgba(123,111,113,.7);
+  border-radius: 50%;
+  z-index: var(--z-tooltip);
+  transition: 400ms;
+  visibility: hidden;
+}
+
+.scrollTop:hover {
+  background-color: red;
+}
+
+.scrollTop__icon {
+  font-size: 2rem;
+  color: var(--first-color-lighten);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem
+}
+/* Show scroll top */
+
+
+/*===== HOME =====*/
+
+
+/*BUTTONS*/
+
+
+/*===== ABOUT =====*/
+
+
+/*===== QUALIFICATION =====*/
+
+
+/*===== SERVICES =====*/
+
+
+/*===== PROJECT IN MIND =====*/
+
+
+/*===== PORTFOLIO =====*/
+
+
+/* Active menu portfolio*/
+
+
+/*===== TESTIMONIAL =====*/
+
+
+/*===== CONTACTME =====*/
+
+
+/*===== FOOTER =====*/
+
+
+/*===== MEDIA QUERIES =====*/
