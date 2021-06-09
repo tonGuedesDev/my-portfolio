@@ -45,18 +45,38 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader() {
 	const header = document.getElementById('header')
 
-	if (this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+	if (this.scrollY >= 537) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 /*===== SHOW SCROLL TOP =====*/ 
 function scrollTop() {
-	const scrollTop = document.getElementById('scrollTop')
+	const scrollTop = document.getElementById('scroll-top')
 
 	if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+
+	console.log(this.scrollY)
 }
 window.addEventListener('scroll', scrollTop)
 
+/*=====  ACORDION SKILLS =====*/ 
+const skillsContent = document.getElementsByClassName('skills__content');
+const skillsHeader = document.querySelectorAll('.skills__header');
+
+function toggleSkills() {
+	let itemClass = this.parentNode.className
+
+	for (i = 0; i < skillsContent.length; i++){
+		skillsContent[i].className = 'skills__content skills-close'
+	}
+	if(itemClass === 'skills__content skills-close'){
+		this.parentNode.className = 'skills__content skills-open'
+	}
+}
+
+skillsHeader.forEach((el) => {
+	el.addEventListener('click', toggleSkills)
+})
 /*===== MIXITUP FILTER PORTFOLIO =====*/ 
 
 /* Link active portfolio */ 
