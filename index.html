@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== SWIPER CSS ===== -->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         
         <!-- ===== BOX ICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -54,7 +54,7 @@
                         <span class="home__greeting">olá meu nome é</span>
                         <h1 class="home__name">Wellington Guedes</h1>
                         <span class="home__profession">Web Developer</span>
-                        <a download="" href="assets/pdf/Clay-Doe-Cv.pdf" target="_blank" class="button button-light">Download Cv</a>
+                        <a download="" href="assets/pdf/Clay-Doe-Cv.pdf" target="_blank" class="button home__button button-light">Download Cv</a>
                     </div>
 
                     <div class="home__social">
@@ -179,14 +179,77 @@
                         </div>
                     </div>
             </section>
-            <!--===== SERVICES =====-->
-            
-            
-            <!--===== PROJECT IN MIND =====-->
-            
 
             <!--===== PORTFOLIO =====-->
-            
+            <section class="portfolio bd-container" id="portfolio">
+                <span class="section-subtitle">Meus</span>
+                <h2 class="section-title">PROJETOS</h2>
+
+                <div class="portfolio__container swiper-container">
+                    <div class="swiper-wrapper">
+                <!--===== PORTFOLIO 1 =====-->
+                        <div class="porfolio__content bd-grid swiper-slide">
+                            <img src="assets/img/work1.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <div class="button__title">
+                                    <h3 class="portfolio__title">Modern Website</h3>
+                                     <a href="#" class="button portfolio__button">
+                                    Demo
+                                        <i class='bx bxs-arrow-to-right button-icon'></i>
+                                    </a>
+                                </div>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                               
+                            </div>
+                        </div>
+
+                        <!--===== PORTFOLIO 2 =====-->
+                        <div class="porfolio__content bd-grid swiper-slide">
+                            <img src="assets/img/work2.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <div class="button__title">
+                                    <h3 class="portfolio__title">Pokedex</h3>
+                                     <a href="#" class="button portfolio__button">
+                                    Demo
+                                        <i class='bx bxs-arrow-to-right button-icon'></i>
+                                    </a>
+                                </div>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                
+                            </div>
+                        </div>
+
+                        <!--===== PORTFOLIO 3 =====-->
+                        <div class="porfolio__content bd-grid swiper-slide">
+                            <img src="assets/img/work3.jpg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <div class="button__title">
+                                    <h3 class="portfolio__title">calculator</h3>
+                                     <a href="#" class="button portfolio__button">
+                                    Demo
+                                        <i class='bx bxs-arrow-to-right button-icon'></i>
+                                    </a>
+                                </div>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="bx bxs-chevron-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="bx bxs-chevron-left swiper-portfolio-icon"></i>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
 
             <!--===== TESTIMONIAL =====-->
             
