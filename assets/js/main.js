@@ -98,5 +98,10 @@ let swiper = new Swiper('.portfolio__container', {
     });
 
 /*===== GSAP ANIMATION =====*/ 
+gsap.from('.home__img', {opacity: 0, duration: 2, delay: .5, x: 60})
+gsap.from('.home__data', {opacity: 0, duration: 2, delay: .5, y: 25})
+gsap.from('.home__greeting, .home__name, .home__profession, .home__button', {opacity: 0, duration: 2, delay: 1, y: 25, ease: 'expo.out', stagger: .2})
 
-
+gsap.from('.nav__logo, .nav_toggle', {opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2})
+gsap.from('.nav__item', {opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2})
+gsap.from('.home__social-icon', {opacity: 0, duration: 2, delay: 1.5, y: 25, ease: 'expo.out', stagger: .2})
